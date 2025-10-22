@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="CV de Hamza Remmo - Ingénieur Automaticien avec 6 ans d'expérience en programmation d'automates industriels (Siemens TIA Portal, Rockwell Studio 5000) et supervision SCADA. Expert en réseaux industriels Profinet, Ethernet/IP et Modbus TCP.">
+    <meta name="keywords" content="ingénieur automaticien, PLC, SCADA, Siemens TIA Portal, Rockwell Automation, WinCC, automates industriels, Profinet, Ethernet/IP, Modbus TCP, Bruxelles, Belgique">
+    <meta name="author" content="Hamza Remmo">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="French, English, Dutch">
+    
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://hamza-remmo.com/cv">
+    <meta property="og:title" content="Hamza REMMO - Ingénieur Automaticien | Expert en Systèmes Industriels">
+    <meta property="og:description" content="Ingénieur automaticien avec 6 ans d'expérience. Expertise en Siemens TIA Portal, Rockwell Studio 5000, et réseaux industriels. Optimisation des processus de production et réduction des temps d'arrêt.">
+    <meta property="og:image" content="photo-profile.jpg">
+    <meta property="og:locale" content="fr_BE">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="nl_BE">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Hamza REMMO - Ingénieur Automaticien">
+    <meta name="twitter:description" content="Expert en automatisation industrielle - Siemens, Rockwell, Schneider - 6 ans d'expérience">
+    <meta name="twitter:image" content="photo-profile.jpg">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>Hamza REMMO - CV Ingénieur Automaticien | Siemens TIA Portal & SCADA Expert</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>⚙️</text></svg>">
+    <style>
+        :root {
+            --primary-color: #667eea;
+            --secondary-color: #764ba2;
+            --dark-blue: #1e3c72;
+            --light-blue: #2a5298;
+            --text-dark: #333;
+            --text-medium: #555;
+            --text-light: #666;
+            --border-color: #e0e0e0;
+            --white: #fff;
+            --transition-speed: 0.3s;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-md: 0 8px 20px rgba(0,0,0,0.1);
+            --shadow-lg: 0 15px 35px rgba(102,126,234,0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            min-height: 100vh;
+            padding: 20px;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+            animation: slideIn 0.8s ease-out;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--light-blue) 100%);
+            color: var(--white);
+            padding: 60px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid rgba(255,255,255,0.3);
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            animation: photoZoom 1s ease-out;
+            background: rgba(255,255,255,0.1);
+        }
+
+        @keyframes photoZoom {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .header-text { flex: 1; }
+
+        h1 {
+            font-size: clamp(2em, 5vw, 3em);
+            margin-bottom: 10px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .subtitle {
+            font-size: clamp(1.1em, 3vw, 1.5em);
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            opacity: 0;
+            animation: fadeIn 0.6s ease-out forwards;
+            word-break: break-word;
+        }
+
+        .contact-item:nth-child(1) { animation-delay: 0.2s; }
+        .contact-item:nth-child(2) { animation-delay: 0.4s; }
+        .contact-item:nth-child(3) { animation-delay: 0.6s; }
+        .contact-item:nth-child(4) { animation-delay: 0.8s; }
+
+        @keyframes fadeIn { to { opacity: 1; } }
+
+        .contact-item a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            padding: 40px;
+        }
+
+        .sidebar {
+            border-right: 2px solid var(--border-color);
+            padding-right: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .section:nth-child(1) { animation-delay: 0.2s; }
+        .section:nth-child(2) { animation-delay: 0.4s; }
+        .section:nth-child(3) { animation-delay: 0.6s; }
+        .section:nth-child(4) { animation-delay: 0.8s; }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: var(--dark-blue);
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--primary-color);
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: var(--secondary-color);
+            transition: width 0.5s ease;
+        }
+
+        .section:hover h2::after { width: 100%; }
+
+        /* Nouveaux styles pour compétences professionnelles */
+        .skill-category {
+            margin-bottom: 20px;
+        }
+
+        .skill-category-title {
+            font-size: 0.9em;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            padding-bottom: 4px;
+            border-bottom: 2px solid var(--border-color);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .skill-item {
+            margin-bottom: 10px;
+            padding: 10px 12px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 8px;
+            border-left: 3px solid var(--primary-color);
+            transition: all var(--transition-speed) ease;
+        }
+
+        .skill-item:hover {
+            background: rgba(255, 255, 255, 0.9);
+            border-left-color: var(--secondary-color);
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+        }
+
+        .skill-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4px;
+        }
+
+        .skill-item-name {
+            font-weight: 600;
+            color: var(--text-dark);
+            font-size: 0.9em;
+        }
+
+        .skill-level {
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.7em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .skill-level.expert {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .skill-level.advanced {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: white;
+        }
+
+        .skill-level.intermediate {
+            background: linear-gradient(135deg, #43e97b, #38f9d7);
+            color: white;
+        }
+
+        .skill-item-detail {
+            font-size: 0.8em;
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: rgba(255,255,255,0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            border-left: 4px solid var(--primary-color);
+            transition: all var(--transition-speed) ease;
+            box-shadow: var(--shadow-md);
+        }
+
+        @media (min-width: 769px) {
+            .experience-item:hover, .education-item:hover {
+                transform: translateX(10px) translateY(-8px);
+                box-shadow: var(--shadow-lg);
+                border-left-color: var(--secondary-color);
+                background: rgba(255,255,255,0.9);
+            }
+        }
+
+        .item-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: var(--dark-blue);
+            margin-bottom: 5px;
+        }
+
+        .item-company {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .item-company a {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: all var(--transition-speed) ease;
+            position: relative;
+        }
+
+        .item-company a::after {
+            content: "🔗";
+            font-size: 0.75em;
+            margin-left: 5px;
+            opacity: 0.6;
+            transition: opacity var(--transition-speed) ease;
+        }
+
+        .item-company a:hover {
+            color: var(--secondary-color);
+            border-bottom-color: var(--secondary-color);
+        }
+
+        .item-company a:hover::after { opacity: 1; }
+
+        .item-date {
+            color: var(--text-light);
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .item-description {
+            color: var(--text-medium);
+            line-height: 1.6;
+        }
+
+        .expand-icon {
+            display: none;
+            margin-left: 10px;
+            transition: transform var(--transition-speed) ease;
+            opacity: 0.7;
+            font-size: 0.8em;
+        }
+
+        .expand-icon::before {
+            content: "▼";
+            display: inline-block;
+            transition: transform var(--transition-speed) ease;
+        }
+
+        .experience-item.expanded .expand-icon::before,
+        .education-item.expanded .expand-icon::before {
+            transform: rotate(-180deg);
+        }
+
+        .language-item, .interest-item {
+            padding: 12px 18px;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            border-radius: 10px;
+            font-weight: 500;
+            transition: all var(--transition-speed) ease;
+            cursor: pointer;
+            box-shadow: 0 6px 18px rgba(102,126,234,0.3);
+        }
+
+        .language-item:hover, .interest-item:hover {
+            transform: scale(1.05) translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102,126,234,0.5);
+        }
+
+        .cert-item {
+            padding: 18px;
+            margin-bottom: 15px;
+            background: rgba(255,255,255,0.7);
+            backdrop-filter: blur(10px);
+            border: 2px solid var(--primary-color);
+            border-radius: 10px;
+            transition: all var(--transition-speed) ease;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        }
+
+        .cert-item:hover {
+            background: var(--primary-color);
+            color: var(--white);
+            transform: scale(1.03) translateY(-5px);
+            box-shadow: 0 12px 30px rgba(102,126,234,0.4);
+        }
+
+        /* Grid pour les certifications dans la colonne principale */
+        #certifications-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
+
+        #certifications-section h2 {
+            grid-column: 1 / -1;
+        }
+
+        #certifications-section .cert-item {
+            margin-bottom: 10px;
+        }
+
+        @media (min-width: 769px) {
+            #certifications-section {
+                display: block;
+            }
+        }
+
+        .download-pdf-btn {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(102,126,234,0.4);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .download-pdf-btn.hidden {
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(-10px);
+        }
+
+        .download-pdf-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(102,126,234,0.6);
+        }
+
+        .pdf-toggle-btn {
+            display: none;
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            cursor: pointer;
+            z-index: 999;
+            font-size: 1.4em;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .pdf-toggle-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .pdf-toggle-btn.visible {
+            display: flex;
+        }
+
+        .language-selector {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            display: flex;
+            gap: 0;
+            z-index: 1000;
+            background: white;
+            padding: 6px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .language-selector.hidden {
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(-10px);
+        }
+
+        .lang-toggle-btn {
+            display: none;
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            min-width: 50px;
+            height: 50px;
+            padding: 0 12px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 999;
+            font-size: 0.95em;
+            font-weight: 700;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+
+        .lang-toggle-btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .lang-toggle-btn.visible {
+            display: flex;
+        }
+
+        .lang-btn {
+            min-width: 50px;
+            height: 40px;
+            border: none;
+            background: transparent;
+            font-size: 0.9em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            border-radius: 8px;
+            position: relative;
+            letter-spacing: 0.5px;
+        }
+
+        .lang-btn:hover {
+            color: var(--primary-color);
+            background: rgba(102, 126, 234, 0.08);
+        }
+
+        .lang-btn.active {
+            color: white;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.35);
+        }
+
+        .lang-btn.active::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 8px;
+            padding: 2px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0.5;
+        }
+
+        .back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            border: none;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            box-shadow: 0 4px 15px rgba(102,126,234,0.4);
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity var(--transition-speed) ease, transform var(--transition-speed) ease;
+            z-index: 1000;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .back-to-top.visible { opacity: 1; }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(102,126,234,0.6);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+
+            .expand-icon {
+                display: inline-block;
+            }
+
+            .main-content {
+                grid-template-columns: 1fr;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+            }
+            
+            .sidebar {
+                border-right: none;
+                border-bottom: 2px solid var(--border-color);
+                padding-right: 0;
+                padding-bottom: 20px;
+                order: 2;
+            }
+
+            .main-section { order: 1; }
+
+            .header { padding: 40px 20px; }
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-photo {
+                width: 120px;
+                height: 120px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .contact-item {
+                justify-content: flex-start;
+                text-align: left;
+                max-width: 100%;
+                padding: 0 5px;
+                font-size: 0.9em;
+            }
+
+            .download-pdf-btn {
+                top: 10px;
+                right: 10px;
+                padding: 10px 16px;
+                font-size: 0.9em;
+            }
+
+            .pdf-toggle-btn {
+                top: 10px;
+                right: 10px;
+                width: 46px;
+                height: 46px;
+                font-size: 1.3em;
+            }
+
+            .language-selector {
+                top: 15px;
+                left: 10px;
+                padding: 4px;
+                gap: 0;
+            }
+
+            .lang-toggle-btn {
+                top: 15px;
+                left: 10px;
+                min-width: 48px;
+                height: 48px;
+                font-size: 0.9em;
+                padding: 0 10px;
+            }
+
+            .lang-btn {
+                min-width: 45px;
+                height: 36px;
+                font-size: 0.85em;
+            }
+
+            .back-to-top { display: flex; }
+
+            .item-description {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.4s ease, margin-top 0.4s ease;
+                margin-top: 0;
+            }
+
+            .experience-item.expanded .item-description,
+            .education-item.expanded .item-description {
+                max-height: 1000px;
+                margin-top: 10px;
+            }
+
+            .experience-item, .education-item {
+                cursor: pointer;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            @page { 
+                margin: 0.5cm;
+                size: A4 portrait;
+            }
+
+            body {
+                background: var(--white);
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+                max-width: 100%;
+            }
+
+            .header {
+                background: var(--dark-blue) !important;
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+                padding: 15px 20px !important;
+            }
+
+            .header::before { display: none; }
+
+            .header-content {
+                flex-direction: row !important;
+                gap: 12px !important;
+            }
+
+            .profile-photo {
+                width: 100px !important;
+                height: 100px !important;
+            }
+
+            h1 {
+                font-size: 1.55em !important;
+                margin-bottom: 3px !important;
+            }
+
+            .subtitle {
+                font-size: 0.95em !important;
+                margin-bottom: 6px !important;
+            }
+
+            .contact-info {
+                flex-direction: row !important;
+                flex-wrap: wrap !important;
+                gap: 6px !important;
+                font-size: 0.70em !important;
+                margin-top: 6px !important;
+            }
+
+            .back-to-top,
+            .download-pdf-btn,
+            .pdf-toggle-btn,
+            .language-selector,
+            .lang-toggle-btn {
+                display: none !important;
+            }
+
+            .main-content {
+                display: grid !important;
+                grid-template-columns: 1fr 2fr !important;
+                gap: 25px !important;
+                padding: 20px 25px !important;
+            }
+
+            .sidebar {
+                border-right: 1px solid #ddd !important;
+                padding-right: 20px !important;
+                width: 100% !important;
+                order: 1 !important;
+            }
+
+            .main-section {
+                border: none !important;
+                padding: 0 !important;
+                width: 100% !important;
+                order: 2 !important;
+            }
+
+            .section {
+                page-break-inside: avoid;
+                margin-bottom: 15px !important;
+                animation: none !important;
+                opacity: 1 !important;
+            }
+
+            h2 {
+                page-break-after: avoid;
+                font-size: 1.2em !important;
+                margin-bottom: 10px !important;
+                padding-bottom: 5px !important;
+                color: var(--dark-blue) !important;
+            }
+
+            h2::after { display: none !important; }
+
+            /* Section Profil - Légèrement plus grande que les descriptions */
+            #profil-section p {
+                font-size: 0.70em !important;
+                line-height: 1.5 !important;
+            }
+
+            .experience-item,
+            .education-item {
+                page-break-inside: avoid;
+                margin-bottom: 3px !important;
+                padding: 4px 6px !important;
+                box-shadow: none !important;
+                border: 1px solid #ddd !important;
+                border-left: 2px solid var(--primary-color) !important;
+                animation: none !important;
+                transform: none !important;
+                background: var(--white) !important;
+                backdrop-filter: none !important;
+            }
+
+            .item-title {
+                font-size: 0.78em !important;
+                margin-bottom: 1px !important;
+            }
+
+            .item-company {
+                font-size: 0.7em !important;
+                margin-bottom: 1px !important;
+            }
+
+            .item-company a::after { display: none !important; }
+
+            .item-date {
+                font-size: 0.66em !important;
+                margin-bottom: 1px !important;
+            }
+
+            .item-description {
+                max-height: none !important;
+                margin-top: 1px !important;
+                font-size: 0.66em !important;
+                line-height: 1.2 !important;
+            }
+
+            .expand-icon { display: none !important; }
+
+            .skill-category { margin-bottom: 8px !important; }
+
+            .skill-category-title {
+                font-size: 0.72em !important;
+                margin-bottom: 4px !important;
+                padding-bottom: 2px !important;
+            }
+
+            .skill-item {
+                margin-bottom: 2px !important;
+                padding: 2px 4px !important;
+                page-break-inside: avoid;
+            }
+
+            .skill-item-header {
+                margin-bottom: 0 !important;
+            }
+
+            .skill-item-name {
+                font-size: 0.65em !important;
+            }
+
+            .skill-level {
+                font-size: 0.58em !important;
+                padding: 1px 4px !important;
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .skill-item-detail {
+                font-size: 0.58em !important;
+            }
+
+            .language-item,
+            .interest-item {
+                padding: 2px 5px !important;
+                margin-bottom: 2px !important;
+                box-shadow: none !important;
+                page-break-inside: avoid;
+                font-size: 0.68em !important;
+                background: var(--primary-color) !important;
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .cert-item {
+                padding: 3px 5px !important;
+                margin-bottom: 3px !important;
+                box-shadow: none !important;
+                page-break-inside: avoid;
+                font-size: 0.68em !important;
+                line-height: 1.15 !important;
+                background: rgba(255,255,255,0.7) !important;
+            }
+
+            .cert-item strong { font-size: 1em !important; }
+
+            /* Supprimer saut de page après formations */
+            #formations-section {
+                page-break-after: avoid !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="pdf-toggle-btn" id="pdfToggle" aria-label="Enregistrer en PDF">📄</button>
+
+    <button class="download-pdf-btn" id="pdfBtn" onclick="window.print()" aria-label="Imprimer ou enregistrer en PDF">
+        <span>📄</span>
+        <span class="pdf-btn-text" data-i18n="print_pdf">Enregistrer en PDF</span>
+    </button>
+
+    <button class="lang-toggle-btn" id="langToggle" aria-label="Changer de langue">
+        <span id="currentLang">FR</span>
+    </button>
+
+    <div class="language-selector" id="langSelector">
+        <button class="lang-btn active" data-lang="fr" aria-label="Français">FR</button>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        <button class="lang-btn" data-lang="nl" aria-label="Nederlands">NL</button>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <img src="photo-profile.jpg" 
+                     alt="Photo de profil de Hamza Remmo, ingénieur automaticien" 
+                     class="profile-photo" 
+                     loading="lazy"
+                     onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 150%22%3E%3Ccircle cx=%2275%22 cy=%2275%22 r=%2275%22 fill=%22%23667eea%22/%3E%3Ctext x=%2275%22 y=%2280%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22white%22%3EHR%3C/text%3E%3C/svg%3E'">
+                <div class="header-text">
+                    <h1>Hamza REMMO</h1>
+                    <div class="subtitle" data-i18n="job_title">Ingénieur Automaticien | Expert en Systèmes Industriels</div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span aria-hidden="true">📧</span>
+                            <a href="mailto:h.remmo@students.ephec.be" aria-label="Envoyer un email à h.remmo@students.ephec.be">h.remmo@students.ephec.be</a>
+                        </div>
+                        <div class="contact-item">
+                            <span aria-hidden="true">📱</span>
+                            <a href="tel:+32475123456" aria-label="Appeler le +32 475 12 34 56">+32 475 12 34 56</a>
+                        </div>
+                        <div class="contact-item">
+                            <span aria-hidden="true">📍</span>
+                            <span data-i18n="location">Bruxelles, Belgique</span>
+                        </div>
+                        <div class="contact-item">
+                            <span aria-hidden="true">🔗</span>
+                            <a href="https://www.linkedin.com/in/hamza-remmo" target="_blank" rel="noopener noreferrer" aria-label="Visiter le profil LinkedIn de Hamza Remmo">linkedin.com/in/hamza-remmo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <section class="section" id="competences-section" aria-labelledby="competences-heading">
+                    <h2 id="competences-heading" data-i18n="skills_title">Compétences Techniques</h2>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-category-title" data-i18n="plc_programming">Automates & Programmation</h3>
+                        <div class="skill-item">
+                            <div class="skill-item-header">
+                                <span class="skill-item-name">Siemens TIA Portal</span>
+                                <span class="skill-level expert" data-i18n="expert">Expert</span>
+                            </div>
+                            <div class="skill-item-detail"><span data-i18n="years">ans</span> · 15+ <span data-i18n="projects">projets</span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-header">
+                                <span class="skill-item-name">Schneider Unity Pro</span>
+                                <span class="skill-level advanced" data-i18n="advanced">Avancé</span>
+                            </div>
+                            <div class="skill-item-detail">4 <span data-i18n="years">ans</span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-header">
+                                <span class="skill-item-name">Rockwell Studio 5000</span>
+                                <span class="skill-level advanced" data-i18n="advanced">Avancé</span>
+                            </div>
+                            <div class="skill-item-detail">3 <span data-i18n="years">ans</span></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category-title" data-i18n="scada_supervision">Supervision & SCADA</h3>
+                        <div class="skill-item">
+                            <div class="skill-item-header">
+                                <span class="skill-item-name">WinCC Professional</span>
+                                <span class="skill-level expert" data-i18n="expert">Expert</span>
+                            </div>
+                            <div class="skill-item-detail">4 <span data-i18n="years">ans</span> · 12 <span data-i18n="lines">lignes</span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-header">
+                                <span class="skill-item-name">Wonderware</span>
+                                <span class="skill-level intermediate" data-i18n="intermediate">Intermédiaire</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category-title" data-i18n="networks_languages">Réseaux & Langages</h3>
+                        <div class="skill-item">
+                            <div class="skill-item-header">
+                                <span class="skill-item-name">Réseaux Industriels</span>
+                                <span class="skill-level expert" data-i18n="expert">Expert</span>
+                            </div>
+                            <div class="skill-item-detail">Profinet, Ethernet/IP, Modbus</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-header">
+                                <span class="skill-item-name">IEC 61131-3 & Python</span>
+                                <span class="skill-level expert" data-i18n="expert">Expert</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="langues-section" aria-labelledby="langues-heading">
+                    <h2 id="langues-heading" data-i18n="languages_title">Langues</h2>
+                    <div class="language-item" role="listitem" data-i18n="lang_french">🇫🇷 Français - Natif</div>
+                    <div class="language-item" role="listitem" data-i18n="lang_english">🇬🇧 Anglais - Courant (C1)</div>
+                    <div class="language-item" role="listitem" data-i18n="lang_dutch">🇳🇱 Néerlandais - Intermédiaire (B1)</div>
+                </section>
+
+                <section class="section" id="certifications-section" aria-labelledby="certifications-heading">
+                    <h2 id="certifications-heading" data-i18n="certifications_title">Certifications</h2>
+                    <div class="cert-item">
+                        <strong>Siemens TIA Portal</strong><br>
+                        <span data-i18n="cert1_name">Certified Programmer</span> (2019)
+                    </div>
+                    <div class="cert-item">
+                        <strong>Rockwell Automation</strong><br>
+                        <span data-i18n="cert2_name">ControlLogix Specialist</span> (2018)
+                    </div>
+                    <div class="cert-item">
+                        <strong>BA4/BA5</strong><br>
+                        <span data-i18n="cert3_name">Habilitations Électriques</span> (2024)
+                    </div>
+                </section>
+
+                <section class="section" id="interets-section" aria-labelledby="interets-heading">
+                    <h2 id="interets-heading" data-i18n="interests_title">Centres d'intérêt</h2>
+                    <div class="interest-item" role="listitem" data-i18n="interest1">🤖 Robotique & IoT</div>
+                    <div class="interest-item" role="listitem" data-i18n="interest2">⚡ Domotique</div>
+                    <div class="interest-item" role="listitem" data-i18n="interest3">🎮 Impression 3D</div>
+                    <div class="interest-item" role="listitem" data-i18n="interest4">🏃 Course à pied</div>
+                </section>
+            </aside>
+
+            <main class="main-section">
+                <section class="section" id="profil-section" aria-labelledby="profil-heading">
+                    <h2 id="profil-heading" data-i18n="profile_title">Profil</h2>
+                    <p style="line-height: 1.8; color: #555;" data-i18n="profile_text">
+                        Ingénieur automaticien avec 6 ans d'expérience en programmation d'automates industriels et supervision SCADA. Expertise approfondie en Siemens TIA Portal, Allen-Bradley Studio 5000 et réseaux industriels (Profinet, Ethernet/IP, Modbus TCP). Historique prouvé d'optimisation de processus de production et de réduction des temps d'arrêt. Expérience confirmée en gestion d'équipe et en mise en service de projets complexes dans les secteurs agroalimentaire et manufacturier.
+                    </p>
+                </section>
+
+                <section class="section" id="experience-section" aria-labelledby="experience-heading">
+                    <h2 id="experience-heading" data-i18n="experience_title">Expériences Professionnelles</h2>
+                    
+                    <article class="experience-item">
+                        <div class="item-title">
+                            <span data-i18n="exp1_title">Ingénieur Automaticien Senior</span>
+                            <span class="expand-icon" aria-hidden="true"></span>
+                        </div>
+                        <div class="item-company"><a href="https://www.actemium.be" target="_blank" rel="noopener noreferrer">Actemium Belgium</a> - Charleroi</div>
+                        <div class="item-date" data-i18n="exp1_date">Mars 2021 - Présent (4 ans)</div>
+                        <div class="item-description">
+                            <span data-i18n="exp1_desc1">• Conception et programmation de systèmes automatisés pour lignes de production (Siemens S7-1500)</span><br>
+                            <span data-i18n="exp1_desc2">• Développement d'interfaces SCADA sur WinCC Professional pour 12 lignes de production</span><br>
+                            <span data-i18n="exp1_desc3">• Optimisation des processus industriels : réduction des temps d'arrêt de 35% (de 120h/an à 78h/an), économisant ~180k€/an</span><br>
+                            <span data-i18n="exp1_desc4">• Management et coordination d'une équipe de 4 techniciens automaticiens</span>
+                        </div>
+                    </article>
+
+                    <article class="experience-item">
+                        <div class="item-title">
+                            <span data-i18n="exp2_title">Automaticien Projet</span>
+                            <span class="expand-icon" aria-hidden="true"></span>
+                        </div>
+                        <div class="item-company"><a href="https://www.siemens.com/be/fr.html" target="_blank" rel="noopener noreferrer">Siemens Belgium</a> - Bruxelles</div>
+                        <div class="item-date" data-i18n="exp2_date">Septembre 2018 - Février 2021 (2,5 ans)</div>
+                        <div class="item-description">
+                            <span data-i18n="exp2_desc1">• Programmation d'automates Siemens S7-1200/1500 et configuration TIA Portal</span><br>
+                            <span data-i18n="exp2_desc2">• Mise en service de 8 projets d'automatisation (budget cumulé 2,4M€) dans le secteur agroalimentaire</span><br>
+                            <span data-i18n="exp2_desc3">• Configuration de réseaux industriels (Profinet, Ethernet/IP, Modbus TCP) et intégration de variateurs de fréquence</span><br>
+                            <span data-i18n="exp2_desc4">• Support technique et maintenance préventive sur site client, disponibilité 24/7 pour interventions urgentes</span>
+                        </div>
+                    </article>
+
+                    <article class="experience-item">
+                        <div class="item-title">
+                            <span data-i18n="exp3_title">Technicien Automaticien</span>
+                            <span class="expand-icon" aria-hidden="true"></span>
+                        </div>
+                        <div class="item-company"><a href="https://www.rockwellautomation.com/fr-be" target="_blank" rel="noopener noreferrer">Rockwell Automation</a> - Anvers</div>
+                        <div class="item-date" data-i18n="exp3_date">Juin 2017 - Août 2018 (1,2 ans)</div>
+                        <div class="item-description">
+                            <span data-i18n="exp3_desc1">• Support technique sur automates Allen-Bradley ControlLogix et CompactLogix (60+ interventions/an)</span><br>
+                            <span data-i18n="exp3_desc2">• Dépannage et diagnostic de pannes sur systèmes automatisés, temps moyen de résolution < 4h</span><br>
+                            <span data-i18n="exp3_desc3">• Modification et optimisation de programmes Studio 5000 selon spécifications client</span>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="section" id="formations-section" aria-labelledby="formations-heading">
+                    <h2 id="formations-heading" data-i18n="education_title">Formations</h2>
+                    
+                    <article class="education-item">
+                        <div class="item-title">
+                            <span data-i18n="edu1_title">Master en Sciences de l'Ingénieur Industriel</span>
+                            <span class="expand-icon" aria-hidden="true"></span>
+                        </div>
+                        <div class="item-company"><a href="https://www.heh.be" target="_blank" rel="noopener noreferrer">Haute École en Hainaut</a> - Mons</div>
+                        <div class="item-date" data-i18n="edu1_date">2014 - 2017</div>
+                        <div class="item-description">
+                            <span data-i18n="edu1_desc1">Spécialisation : Automatisation - Grande Distinction</span><br>
+                            <span data-i18n="edu1_desc2">Mémoire : "Optimisation d'une ligne d'assemblage par contrôle prédictif" (17/20)</span>
+                        </div>
+                    </article>
+
+                    <article class="education-item">
+                        <div class="item-title">
+                            <span data-i18n="edu2_title">Bachelier en Automatisation</span>
+                            <span class="expand-icon" aria-hidden="true"></span>
+                        </div>
+                        <div class="item-company"><a href="https://www.ephec.be" target="_blank" rel="noopener noreferrer">EPHEC</a> - Bruxelles</div>
+                        <div class="item-date" data-i18n="edu2_date">2011 - 2014</div>
+                        <div class="item-description" data-i18n="edu2_desc">
+                            Option : Automatisation Industrielle - Distinction
+                        </div>
+                    </article>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut de page">↑</button>
+
+    <script>
+        // Système de traduction complet
+        const translations = {
+            fr: {
+                print_pdf: "Enregistrer en PDF",
+                job_title: "Ingénieur Automaticien | Expert en Systèmes Industriels",
+                location: "Bruxelles, Belgique",
+                skills_title: "Compétences Techniques",
+                languages_title: "Langues",
+                certifications_title: "Certifications",
+                interests_title: "Centres d'intérêt",
+                profile_title: "Profil",
+                experience_title: "Expériences Professionnelles",
+                education_title: "Formations",
+                
+                // Catégories de compétences
+                plc_programming: "Automates & Programmation",
+                scada_supervision: "Supervision & SCADA",
+                networks_languages: "Réseaux & Langages",
+                
+                // Niveaux
+                expert: "Expert",
+                advanced: "Avancé",
+                intermediate: "Intermédiaire",
+                
+                // Unités
+                years: "ans",
+                projects: "projets",
+                lines: "lignes",
+                present: "Présent",
+                
+                // Langues
+                lang_french: "Français - Natif",
+                lang_english: "Anglais - Courant (C1)",
+                lang_dutch: "Néerlandais - Intermédiaire (B1)",
+                
+                // Certifications
+                cert1_name: "Certified Programmer",
+                cert2_name: "ControlLogix Specialist",
+                cert3_name: "Habilitations Électriques",
+                
+                // Centres d'intérêt
+                interest1: "Robotique & IoT",
+                interest2: "Domotique",
+                interest3: "Impression 3D",
+                interest4: "Course à pied",
+                
+                // Profil
+                profile_text: "Ingénieur automaticien avec 6 ans d'expérience en programmation d'automates industriels et supervision SCADA. Expertise approfondie en Siemens TIA Portal, Allen-Bradley Studio 5000 et réseaux industriels (Profinet, Ethernet/IP, Modbus TCP). Historique prouvé d'optimisation de processus de production et de réduction des temps d'arrêt. Expérience confirmée en gestion d'équipe et en mise en service de projets complexes dans les secteurs agroalimentaire et manufacturier.",
+                
+                // Expérience 1
+                exp1_title: "Ingénieur Automaticien Senior",
+                exp1_date: "Mars 2021 - Présent (4 ans)",
+                exp1_desc1: "Conception et programmation de systèmes automatisés pour lignes de production (Siemens S7-1500)",
+                exp1_desc2: "Développement d'interfaces SCADA sur WinCC Professional pour 12 lignes de production",
+                exp1_desc3: "Optimisation des processus industriels : réduction des temps d'arrêt de 35% (de 120h/an à 78h/an), économisant ~180k€/an",
+                exp1_desc4: "Management et coordination d'une équipe de 4 techniciens automaticiens",
+                
+                // Expérience 2
+                exp2_title: "Automaticien Projet",
+                exp2_date: "Septembre 2018 - Février 2021 (2,5 ans)",
+                exp2_desc1: "Programmation d'automates Siemens S7-1200/1500 et configuration TIA Portal",
+                exp2_desc2: "Mise en service de 8 projets d'automatisation (budget cumulé 2,4M€) dans le secteur agroalimentaire",
+                exp2_desc3: "Configuration de réseaux industriels (Profinet, Ethernet/IP, Modbus TCP) et intégration de variateurs de fréquence",
+                exp2_desc4: "Support technique et maintenance préventive sur site client, disponibilité 24/7 pour interventions urgentes",
+                
+                // Expérience 3
+                exp3_title: "Technicien Automaticien",
+                exp3_date: "Juin 2017 - Août 2018 (1,2 ans)",
+                exp3_desc1: "Support technique sur automates Allen-Bradley ControlLogix et CompactLogix (60+ interventions/an)",
+                exp3_desc2: "Dépannage et diagnostic de pannes sur systèmes automatisés, temps moyen de résolution < 4h",
+                exp3_desc3: "Modification et optimisation de programmes Studio 5000 selon spécifications client",
+                
+                // Formation 1
+                edu1_title: "Master en Sciences de l'Ingénieur Industriel",
+                edu1_date: "2014 - 2017",
+                edu1_desc1: "Spécialisation : Automatisation - Grande Distinction",
+                edu1_desc2: "Mémoire : \"Optimisation d'une ligne d'assemblage par contrôle prédictif\" (17/20)",
+                
+                // Formation 2
+                edu2_title: "Bachelier en Automatisation",
+                edu2_date: "2011 - 2014",
+                edu2_desc: "Option : Automatisation Industrielle - Distinction"
+            },
+            
+            en: {
+                print_pdf: "Save as PDF",
+                job_title: "Automation Engineer | Industrial Systems Expert",
+                location: "Brussels, Belgium",
+                skills_title: "Technical Skills",
+                languages_title: "Languages",
+                certifications_title: "Certifications",
+                interests_title: "Interests",
+                profile_title: "Profile",
+                experience_title: "Professional Experiences",
+                education_title: "Education & Training",
+                
+                // Skills categories
+                plc_programming: "PLCs & Programming",
+                scada_supervision: "SCADA & Supervision",
+                networks_languages: "Networks & Languages",
+                
+                // Levels
+                expert: "Expert",
+                advanced: "Advanced",
+                intermediate: "Intermediate",
+                
+                // Units
+                years: "years",
+                projects: "projects",
+                lines: "lines",
+                present: "Present",
+                
+                // Languages
+                lang_french: "French - Native",
+                lang_english: "English - Fluent (C1)",
+                lang_dutch: "Dutch - Intermediate (B1)",
+                
+                // Certifications
+                cert1_name: "Certified Programmer",
+                cert2_name: "ControlLogix Specialist",
+                cert3_name: "Electrical Certifications",
+                
+                // Interests
+                interest1: "Robotics & IoT",
+                interest2: "Home Automation",
+                interest3: "3D Printing",
+                interest4: "Running",
+                
+                // Profile
+                profile_text: "Automation engineer with 6 years of experience in industrial PLC programming and SCADA supervision. In-depth expertise in Siemens TIA Portal, Allen-Bradley Studio 5000, and industrial networks (Profinet, Ethernet/IP, Modbus TCP). Proven track record in production process optimization and downtime reduction. Confirmed experience in team management and commissioning of complex projects in food processing and manufacturing sectors.",
+                
+                // Experience 1
+                exp1_title: "Senior Automation Engineer",
+                exp1_date: "March 2021 - Present (4 years)",
+                exp1_desc1: "Design and programming of automated systems for production lines (Siemens S7-1500)",
+                exp1_desc2: "Development of SCADA interfaces on WinCC Professional for 12 production lines",
+                exp1_desc3: "Industrial process optimization: 35% downtime reduction (from 120h/year to 78h/year), saving ~€180k/year",
+                exp1_desc4: "Management and coordination of a team of 4 automation technicians",
+                
+                // Experience 2
+                exp2_title: "Project Automation Engineer",
+                exp2_date: "September 2018 - February 2021 (2.5 years)",
+                exp2_desc1: "Programming of Siemens S7-1200/1500 PLCs and TIA Portal configuration",
+                exp2_desc2: "Commissioning of 8 automation projects (cumulative budget €2.4M) in the food processing sector",
+                exp2_desc3: "Configuration of industrial networks (Profinet, Ethernet/IP, Modbus TCP) and frequency drive integration",
+                exp2_desc4: "Technical support and preventive maintenance on client sites, 24/7 availability for urgent interventions",
+                
+                // Experience 3
+                exp3_title: "Automation Technician",
+                exp3_date: "June 2017 - August 2018 (1.2 years)",
+                exp3_desc1: "Technical support on Allen-Bradley ControlLogix and CompactLogix PLCs (60+ interventions/year)",
+                exp3_desc2: "Troubleshooting and diagnosis of automated systems failures, average resolution time < 4h",
+                exp3_desc3: "Modification and optimization of Studio 5000 programs according to client specifications",
+                
+                // Education 1
+                edu1_title: "Master's Degree in Industrial Engineering",
+                edu1_date: "2014 - 2017",
+                edu1_desc1: "Specialization: Automation - High Distinction",
+                edu1_desc2: "Thesis: \"Optimization of an assembly line through predictive control\" (17/20)",
+                
+                // Education 2
+                edu2_title: "Bachelor's Degree in Automation",
+                edu2_date: "2011 - 2014",
+                edu2_desc: "Option: Industrial Automation - Distinction"
+            },
+            
+            nl: {
+                print_pdf: "Opslaan als PDF",
+                job_title: "Automatiseringsingenieur | Expert Industriële Systemen",
+                location: "Brussel, België",
+                skills_title: "Technische Vaardigheden",
+                languages_title: "Talen",
+                certifications_title: "Certificeringen",
+                interests_title: "Interesses",
+                profile_title: "Profiel",
+                experience_title: "Professionele Ervaringen",
+                education_title: "Opleidingen",
+                
+                // Vaardigheden categorieën
+                plc_programming: "PLC's & Programmering",
+                scada_supervision: "SCADA & Supervisie",
+                networks_languages: "Netwerken & Talen",
+                
+                // Niveaus
+                expert: "Expert",
+                advanced: "Gevorderd",
+                intermediate: "Gemiddeld",
+                
+                // Eenheden
+                years: "jaar",
+                projects: "projecten",
+                lines: "lijnen",
+                present: "Heden",
+                
+                // Talen
+                lang_french: "Frans - Moedertaal",
+                lang_english: "Engels - Vloeiend (C1)",
+                lang_dutch: "Nederlands - Gemiddeld (B1)",
+                
+                // Certificeringen
+                cert1_name: "Gecertificeerd Programmeur",
+                cert2_name: "ControlLogix Specialist",
+                cert3_name: "Elektrische Bevoegdheden",
+                
+                // Interesses
+                interest1: "Robotica & IoT",
+                interest2: "Domotica",
+                interest3: "3D-printen",
+                interest4: "Hardlopen",
+                
+                // Profiel
+                profile_text: "Automatiseringsingenieur met 6 jaar ervaring in industriële PLC-programmering en SCADA-supervisie. Diepgaande expertise in Siemens TIA Portal, Allen-Bradley Studio 5000 en industriële netwerken (Profinet, Ethernet/IP, Modbus TCP). Bewezen staat van dienst in productieproces optimalisatie en downtime vermindering. Bevestigde ervaring in teammanagement en inbedrijfstelling van complexe projecten in de voedingsindustrie en productiesectoren.",
+                
+                // Ervaring 1
+                exp1_title: "Senior Automatiseringsingenieur",
+                exp1_date: "Maart 2021 - Heden (4 jaar)",
+                exp1_desc1: "Ontwerp en programmering van geautomatiseerde systemen voor productielijnen (Siemens S7-1500)",
+                exp1_desc2: "Ontwikkeling van SCADA-interfaces op WinCC Professional voor 12 productielijnen",
+                exp1_desc3: "Optimalisatie van industriële processen: 35% downtime vermindering (van 120u/jaar naar 78u/jaar), besparing ~€180k/jaar",
+                exp1_desc4: "Management en coördinatie van een team van 4 automatiseringstechnici",
+                
+                // Ervaring 2
+                exp2_title: "Project Automatiseringsingenieur",
+                exp2_date: "September 2018 - Februari 2021 (2,5 jaar)",
+                exp2_desc1: "Programmering van Siemens S7-1200/1500 PLC's en TIA Portal configuratie",
+                exp2_desc2: "Inbedrijfstelling van 8 automatiseringsprojecten (cumulatief budget €2,4M) in de voedingsindustrie",
+                exp2_desc3: "Configuratie van industriële netwerken (Profinet, Ethernet/IP, Modbus TCP) en integratie van frequentieomvormers",
+                exp2_desc4: "Technische ondersteuning en preventief onderhoud op klantlocaties, 24/7 beschikbaarheid voor dringende interventies",
+                
+                // Ervaring 3
+                exp3_title: "Automatiseringstechnicus",
+                exp3_date: "Juni 2017 - Augustus 2018 (1,2 jaar)",
+                exp3_desc1: "Technische ondersteuning op Allen-Bradley ControlLogix en CompactLogix PLC's (60+ interventies/jaar)",
+                exp3_desc2: "Probleemoplossing en diagnose van storingen in geautomatiseerde systemen, gemiddelde oplossingstijd < 4u",
+                exp3_desc3: "Wijziging en optimalisatie van Studio 5000 programma's volgens klantspecificaties",
+                
+                // Opleiding 1
+                edu1_title: "Master in de Industriële Wetenschappen",
+                edu1_date: "2014 - 2017",
+                edu1_desc1: "Specialisatie: Automatisering - Grote Onderscheiding",
+                edu1_desc2: "Eindwerk: \"Optimalisatie van een assemblage lijn door predictieve controle\" (17/20)",
+                
+                // Opleiding 2
+                edu2_title: "Bachelor Automatisering",
+                edu2_date: "2011 - 2014",
+                edu2_desc: "Optie: Industriële Automatisering - Onderscheiding"
+            }
+        };
+
+        function translatePage(lang) {
+            const t = translations[lang];
+            if (!t) return;
+            
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (t[key]) el.textContent = t[key];
+            });
+            
+            localStorage.setItem('cvLanguage', lang);
+        }
+
+        function initLanguageSystem() {
+            const langButtons = document.querySelectorAll('.lang-btn');
+            const savedLang = localStorage.getItem('cvLanguage') || 'fr';
+            const langSelector = document.getElementById('langSelector');
+            const langToggle = document.getElementById('langToggle');
+            const currentLangSpan = document.getElementById('currentLang');
+            let hideTimer;
+            
+            translatePage(savedLang);
+            updateToggleLanguage(savedLang);
+            
+            langButtons.forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.lang === savedLang);
+                btn.addEventListener('click', () => {
+                    const lang = btn.dataset.lang;
+                    langButtons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    translatePage(lang);
+                    updateToggleLanguage(lang);
+                    
+                    // Sur mobile, masquer après sélection
+                    if (window.innerWidth <= 768) {
+                        hideLanguageSelector();
+                    }
+                });
+            });
+
+            // Mettre à jour le texte du bouton toggle
+            function updateToggleLanguage(lang) {
+                if (currentLangSpan) {
+                    currentLangSpan.textContent = lang.toUpperCase();
+                }
+            }
+
+            // Fonction pour masquer le sélecteur
+            function hideLanguageSelector() {
+                if (window.innerWidth <= 768) {
+                    langSelector.classList.add('hidden');
+                    langToggle.classList.add('visible');
+                }
+            }
+
+            // Fonction pour afficher le sélecteur
+            function showLanguageSelector() {
+                langSelector.classList.remove('hidden');
+                langToggle.classList.remove('visible');
+                
+                // Auto-masquer après 3 secondes sur mobile
+                if (window.innerWidth <= 768) {
+                    clearTimeout(hideTimer);
+                    hideTimer = setTimeout(hideLanguageSelector, 3000);
+                }
+            }
+
+            // Bouton toggle
+            langToggle.addEventListener('click', showLanguageSelector);
+
+            // Sur mobile, masquer automatiquement après 3 secondes au chargement
+            if (window.innerWidth <= 768) {
+                hideTimer = setTimeout(hideLanguageSelector, 3000);
+            }
+
+            // Sur desktop, toujours visible
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 768) {
+                    langSelector.classList.remove('hidden');
+                    langToggle.classList.remove('visible');
+                    clearTimeout(hideTimer);
+                } else {
+                    hideLanguageSelector();
+                }
+            });
+        }
+
+        function initMobileExpand() {
+            const items = document.querySelectorAll('.experience-item, .education-item');
+            
+            items.forEach(item => {
+                // Supprimer les anciens listeners
+                const newItem = item.cloneNode(true);
+                item.replaceWith(newItem);
+                
+                newItem.addEventListener('click', function(e) {
+                    // Ne pas intercepter les clics sur les liens
+                    if (e.target.tagName === 'A' || e.target.closest('a')) return;
+                    
+                    if (window.innerWidth <= 768) {
+                        // Mode mobile : une seule carte ouverte à la fois
+                        const wasExpanded = this.classList.contains('expanded');
+                        
+                        // Fermer toutes les cartes
+                        document.querySelectorAll('.experience-item, .education-item').forEach(other => {
+                            other.classList.remove('expanded');
+                        });
+                        
+                        // Ouvrir celle-ci si elle était fermée
+                        if (!wasExpanded) {
+                            this.classList.add('expanded');
+                        }
+                    } else {
+                        // Mode desktop : toggle normal
+                        this.classList.toggle('expanded');
+                    }
+                });
+            });
+        }
+
+        function initBackToTop() {
+            const backToTop = document.getElementById('backToTop');
+            if (!backToTop) return;
+
+            const sentinel = document.createElement('div');
+            sentinel.style.position = 'absolute';
+            sentinel.style.top = '300px';
+            sentinel.style.height = '1px';
+            document.body.prepend(sentinel);
+
+            const observer = new IntersectionObserver(([entry]) => {
+                backToTop.classList.toggle('visible', !entry.isIntersecting);
+            }, { threshold: 0 });
+
+            observer.observe(sentinel);
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        function initPdfToggle() {
+            const pdfBtn = document.getElementById('pdfBtn');
+            const pdfToggle = document.getElementById('pdfToggle');
+            let hidePdfTimer;
+
+            function hidePdfButton() {
+                if (window.innerWidth <= 768) {
+                    pdfBtn.classList.add('hidden');
+                    pdfToggle.classList.add('visible');
+                }
+            }
+
+            function showPdfButton() {
+                pdfBtn.classList.remove('hidden');
+                pdfToggle.classList.remove('visible');
+                
+                if (window.innerWidth <= 768) {
+                    clearTimeout(hidePdfTimer);
+                    hidePdfTimer = setTimeout(hidePdfButton, 3000);
+                }
+            }
+
+            // Clic sur le toggle pour afficher le bouton complet
+            pdfToggle.addEventListener('click', showPdfButton);
+
+            // Sur mobile, masquer automatiquement après 3 secondes au chargement
+            if (window.innerWidth <= 768) {
+                hidePdfTimer = setTimeout(hidePdfButton, 3000);
+            }
+
+            // Gérer le resize
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 768) {
+                    pdfBtn.classList.remove('hidden');
+                    pdfToggle.classList.remove('visible');
+                    clearTimeout(hidePdfTimer);
+                } else {
+                    hidePdfButton();
+                }
+            });
+        }
+
+        const init = () => {
+            initLanguageSystem();
+            initMobileExpand();
+            initBackToTop();
+            initPdfToggle();
+        };
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
+
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(initMobileExpand, 250);
+        });
+    </script>
+</body>
+</html>
